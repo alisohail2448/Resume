@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
@@ -15,9 +19,10 @@
     <title>Resume</title>
   </head>
   <body>
-      <main class="main-content">
-          <section class="left-section">
+      <main class="main-content" id="area-cv">
+          <section class="left-section bd-container">
            <div class="left-content">
+            <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
             <div class="profile">
                 <div class="image">
                 <img src="avatar.jpg" alt="">
@@ -209,7 +214,7 @@
 
 
 
-          <section class="right-section">
+          <section class="right-section bd-container">
             <div class="right-main-content">
               <section class="about sect">
                 <h2 class="right-title">
@@ -413,5 +418,8 @@
             </div>
           </section>
       </main>
+
+      <script src="html2pdf.bundle.min.js"></script>
+      <script src="main.js"></script>
   </body>
 </html>
